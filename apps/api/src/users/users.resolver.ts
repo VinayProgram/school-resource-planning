@@ -15,11 +15,12 @@ export class UsersResolver {
 
   @Query(() => [User], { name: 'users' })
   findAll() {
+    console.log('hey')
     return this.usersService.findAll();
   }
 
   @Query(() => User, { name: 'user' })
-  findOne(@Args('vinay', { type: () => Int }) id: number) {
+  findOne(@Args('id', { type: () => Int }) id: number) {
     return this.usersService.findOne(id);
   }
 

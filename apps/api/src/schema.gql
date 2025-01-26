@@ -3,13 +3,14 @@
 # ------------------------------------------------------
 
 type User {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  id: Int!
+  name: String!
+  email: String!
 }
 
 type Query {
   users: [User!]!
-  user(vinay: Int!): User!
+  user(id: Int!): User!
 }
 
 type Mutation {
