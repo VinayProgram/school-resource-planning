@@ -15,7 +15,6 @@ export class UsersResolver {
 
   @Query(() => [User], { name: 'users' })
   findAll() {
-    console.log('hey')
     return this.usersService.findAll();
   }
 

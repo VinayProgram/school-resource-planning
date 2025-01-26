@@ -16,7 +16,6 @@ export class UsersService {
   }
 
   findAll() {
-    console.log('video')
     return this.db.select().from(dbs.usersTable);
   }
 
