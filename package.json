@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format":"prettier \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd ./apps/api && pnpm start:dev\" \" cd ./apps/web && pnpm run dev\" "
   },
   "keywords": [],
   "author": "",
